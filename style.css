@@ -1,0 +1,346 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: #0779e4 3px solid;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Puts logo on left, nav on right */
+    align-items: center;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo-image {
+    height: 75px; /* This sets the correct, smaller logo size */
+    width: auto;
+}
+
+header nav {
+    margin-top: 5px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/* Hero Banner Styles */
+.hero-image-section {
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Text Section */
+.hero-text {
+    background: #0779e4;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffc107;
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 0;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Services Page */
+.services-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-category {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.service-category h2 {
+    color: #0779e4;
+}
+
+.service-category ul {
+    list-style: disc; 
+    padding-left: 20px;
+}
+
+.service-category li {
+    padding-bottom: 10px;
+}
+
+.specialty {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Booking Page Styles */
+.booking-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.booking-intro {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.service-area-info {
+    margin-top: 40px;
+    font-size: 16px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #0779e4;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center; 
+    padding: 20px 0;
+    margin-top: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Footer Social Icon */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.social-links {
+    line-height: 0; 
+}
+
+.social-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    color: #fff; 
+    transition: opacity 0.2s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8; 
+}
+
+/* --- Gallery Page Styles --- */
+.gallery-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Lightbox Styles --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #ccc;
+}
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+    /* Header */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    header ul {
+        text-align: center;
+    }
+
+    header li {
+        display: inline-block;
+        padding: 5px 10px;
+        margin: 0 auto;
+    }
+
+    /* Hero Section */
+    .hero-text h1, .booking-section h1 {
+        font-size: 36px;
+    }
+    
+    /* General Container */
+    .container {
+        width: 90%;
+    }
+
+    /* Gallery Grid on Mobile */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Gallery Grid on Phones */
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 1 column on phones */
+    }
+}
+

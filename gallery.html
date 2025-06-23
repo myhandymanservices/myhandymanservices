@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Handyman Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="logo.png" alt="My Handyman Services Logo" class="logo-image">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="book-an-estimate.html">Book an Estimate</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="gallery-section">
+            <h1>Our Work</h1>
+            <p>A collection of photos from our recent projects. Click any image to view it larger.</p>
+            <div class="gallery-grid">
+                <a href="gallery-image-1.jpg" class="gallery-item"><img src="gallery-image-1.jpg" alt="Project image 1"></a>
+                <a href="gallery-image-2.jpg" class="gallery-item"><img src="gallery-image-2.jpg" alt="Project image 2"></a>
+                <a href="gallery-image-3.jpg" class="gallery-item"><img src="gallery-image-3.jpg" alt="Project image 3"></a>
+                <a href="gallery-image-4.jpg" class="gallery-item"><img src="gallery-image-4.jpg" alt="Project image 4"></a>
+                <a href="gallery-image-5.jpg" class="gallery-item"><img src="gallery-image-5.jpg" alt="Project image 5"></a>
+                <a href="gallery-image-6.jpg" class="gallery-item"><img src="gallery-image-6.jpg" alt="Project image 6"></a>
+            </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-button">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 My Handyman Services | Call us at 250-899-2102</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61576935701057" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
