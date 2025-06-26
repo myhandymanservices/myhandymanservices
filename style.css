@@ -344,3 +344,37 @@ footer p {
     }
 }
 
+/* --- Review Section --- */
+.review-section {
+    background-color: #f8f9fa; /* A light grey to stand out */
+    padding: 50px 0;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+}
+
+.review-section h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.review-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.review-button {
+    display: inline-block;
+    background: #4285F4; /* Official Google Blue */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+}
+
+.review-button:hover {
+    background-color: #3367D6; /* A slightly darker blue for hover */
+}
